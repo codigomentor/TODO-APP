@@ -4,14 +4,14 @@ const TodoItem = ({ todo, onMarkComplete, onDeleteItem }) => {
   const getStyle = () => {
     return {
       textDecoration: todo.completed ? "line-through" : "none",
-      margin: "20px",
-      border: "1px solid #ffffff",
-      backgroundColor: "#CCF7E3",
+      margin: "5px",
+      padding: "5px",
+      marginBottom: "-4px",
     };
   };
 
   return (
-    <div style={getStyle()}>
+    <div style={getStyle()} className="box">
       <input
         type="checkbox"
         checked={todo.completed}

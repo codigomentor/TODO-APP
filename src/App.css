@@ -1,8 +1,8 @@
 .container {
   margin: auto;
   width: 50%;
-  border: 1px solid #73AD21;
-  background-color: #32746A;
+  border: 1px solid #ddd;
+  background-color: #fff;
   padding: 10px;
 }
 
@@ -10,4 +10,8 @@
   float: right;
   background-color: red;
   color: #ffffff;
+}
+
+.box:nth-of-type(odd) {
+  background: #eee;
 }

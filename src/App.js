@@ -26,7 +26,7 @@ export const App = () => {
 
   const addTodo = (newTodo) => {
     console.log("newTodo", newTodo);
-    let newItem = { id: todos.length + 1, task: newTodo, completed: false };
+    let newItem = { id: new Date().getTime(), task: newTodo, completed: false };
 
     setTodos([...todos, newItem]);
   };
